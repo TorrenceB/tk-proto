@@ -1,0 +1,493 @@
+/* Global Styles */
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0 0 0.5em 0;
+  padding: 0;
+  line-height: 1em;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.3em;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+p {
+  font-size: 0.8em;
+}
+
+i {
+  font-size: 1.75em;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+label {
+  font-size: 0.8em;
+}
+
+input {
+  font-family: "Montserrat", FontAwesome, sans-serif;
+
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 1.25em;
+}
+
+button {
+  width: 100%;
+  text-align: center;
+  border: none;
+  margin: 0.5em 0;
+  padding: 1.5em 0;
+  transition: 400ms;
+
+  font-weight: 600;
+}
+
+table {
+  width: 100%;
+  overflow-x: scroll;
+  border-collapse: collapse;
+}
+
+ul img {
+  height: 40px;
+  width: auto;
+}
+
+li {
+  transition: 400ms;
+}
+
+hr {
+  border-top: 3px solid #000000;
+  height: 3px;
+}
+
+.app-wrapper {
+  padding: 1%;
+  margin: 1%;
+}
+
+/* Utility classes*/
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex: 1;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-end {
+  align-items: flex-end;
+}
+
+.pa-1 {
+  padding: 1em;
+}
+
+.pa-2 {
+  padding: 2em;
+}
+
+.px-1 {
+  padding: 0 1em;
+}
+
+.px-half {
+  padding: 0 0.5em;
+}
+
+.ma-1 {
+  margin: 1em;
+}
+
+.my-1 {
+  margin: 1em 0;
+}
+
+.mt-1 {
+  margin-top: 1em;
+}
+
+.mt-2 {
+  margin-top: 2em;
+}
+
+.mb-1 {
+  margin-bottom: 1em;
+}
+
+.mb-2 {
+  margin-bottom: 2em;
+}
+
+.my-2 {
+  margin: 2em 0;
+}
+
+.mx-1 {
+  margin: 0 1em;
+}
+
+.mx-2 {
+  margin: 0 2em;
+}
+
+.margin-reset {
+  margin: 0 !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.color-primary {
+  color: #229cd1;
+}
+
+.color-caution {
+  color: #ffc107;
+}
+
+.color-danger {
+  color: #d9534f;
+}
+
+.color-success {
+  color: #2e9446;
+}
+
+.color-white {
+  color: #ffffff;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.overflow-x-scroll {
+  overflow-x: scroll;
+}
+
+.default-border {
+  border: 1px solid #ccc;
+}
+
+.draw-backdrop {
+  background-color: #ccc;
+}
+
+button.primary-solid-yellow {
+  background-color: #ffc107;
+  color: #ffffff;
+}
+
+button.secondary-transparent-yellow {
+  border: 1px solid #ffc107;
+  color: #ffc107;
+  background-color: #ffffff;
+}
+
+button.primary-solid-blue {
+  background-color: #229cd1;
+  color: #ffffff;
+  border: 1px solid #229cd1;
+}
+
+button.secondary-transparent-blue {
+  background-color: #ffffff;
+  color: #229cd1;
+  border: 1px solid #229cd1;
+}
+
+button.primary-solid-black {
+  background-color: #000000;
+  border: 1px solid #000000;
+  color: #ffffff;
+}
+
+button.primary-solid-red {
+  background-color: #d9534f;
+  border: 1px solid #d9534f;
+  color: #ffffff;
+}
+
+/* Nav Bar */
+.fa-bars {
+  font-size: 2em;
+}
+
+ul.menu-list {
+  background-color: #161d34;
+  list-style-type: none;
+  align-items: center;
+}
+
+.menu-content {
+  display: none;
+
+  position: absolute;
+  background: rgba(19, 15, 15, 0.97);
+  top: 70px;
+  left: 0;
+  right: 0;
+
+  z-index: 1;
+}
+
+/* Kendo */
+input.k-textbox {
+  padding: 10px;
+}
+
+label.k-label {
+  font-size: 1em;
+}
+
+/* Radio controls */
+.radio-control {
+  width: 5%;
+}
+
+input[type="radio"] {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+
+  transition: 450ms;
+}
+
+.radio-control-small {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+
+  margin: 0.5em 0;
+}
+
+/* Form Utility */
+
+.form-wrapper * {
+  margin: 0.5em 0;
+  /*
+  Select ALL descendants of
+  form-wrapper and apply margin of 0.5em
+  */
+}
+
+/* Timecard */
+
+@media only screen and (min-width: 800px) {
+  .text-left-medium {
+    text-align: left;
+  }
+
+  .reset-backdrop-medium {
+    background-color: inherit;
+  }
+
+  .radio-control-medium {
+    justify-content: start;
+  }
+}
+
+@media only screen and (min-width: 1260px) {
+  /* Global */
+  button {
+    padding: 1em 0;
+    width: 30em;
+  }
+
+  /* Utility */
+  .mx-1-medium {
+    margin: 0 1em;
+  }
+
+  .hide-medium {
+    display: none;
+  }
+
+  .padding-reset-medium {
+    padding: 0;
+  }
+
+  .margin-reset-medium {
+    margin: 0;
+  }
+
+  .justify-center-medium {
+    justify-content: center;
+  }
+
+  .set-row-dimensions-medium {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+  }
+
+  .set-column-dimensions-medium {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+  }
+
+  .shrink-column {
+    flex: 0.45;
+  }
+
+  button.primary-solid-yellow {
+    border: 1px solid #ffc107;
+  }
+
+  button.primary-solid-blue:hover {
+    background-color: #ffffff;
+    color: #229cd1;
+  }
+
+  button.primary-solid-yellow:hover {
+    background-color: #ffffff;
+    color: #ffc107;
+  }
+
+  button.primary-solid-red:hover {
+    background-color: #ffffff;
+    color: #d9534f;
+  }
+
+  button.primary-solid-black:hover {
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  .draw-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+  }
+
+  .draw-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  /* Nav Bar */
+  ul.menu-container__list {
+    padding: 0 1em;
+  }
+
+  div.menu-content {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    position: static;
+    background-color: inherit;
+
+    z-index: 0;
+  }
+
+  li:hover {
+    background-color: #229cd1;
+  }
+
+  /* Radio Control */
+  .radio-control-large {
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width: 2100px) {
+  .ma-1-large {
+    margin: 1em;
+  }
+
+  .set-row-dimensions-large {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+  }
+}

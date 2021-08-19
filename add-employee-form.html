@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add Employee</title>
+    <link href="./styles/styles.css" rel="stylesheet" />
+    <link href="./styles/menu.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/81f85f9ec5.js?v=20210802"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scripts/utility/utils.js" async></script>
+    <script src="./scripts/add-employee-form.js" async></script>
+  </head>
+  <body>
+    <div class="menu"></div>
+    <div class="app-wrapper">
+      <div class="row justify-center-medium">
+        <div class="column mt-1 pa-1 draw-card shrink-column">
+          <h1 class="text-left">Add Employee</h1>
+          <form class="form-wrapper">
+            <div>
+              <label>Employee Name</label>
+              <input name="employee-name" />
+            </div>
+            <div>
+              <label>Address</label>
+              <input name="employee-address" />
+            </div>
+            <div>
+              <label>City</label>
+              <input name="employee-city" />
+            </div>
+            <div>
+              <label>State</label>
+              <input name="employee-state" />
+            </div>
+            <div>
+              <label>Zip Code</label>
+              <input name="employee-zipcode" />
+            </div>
+            <div>
+              <label>Phone Number</label>
+              <input name="employee-phone" />
+            </div>
+            <div>
+              <label>Email</label>
+              <input name="employee-email" />
+            </div>
+            <div>
+              <label>Hourly Rate</label>
+              <input name="employee-rate" />
+            </div>
+            <div>
+              <label>Work Week</label>
+              <select name="day-selection">
+                <option>Monday</option>
+                <option>Tuesday</option>
+                <option>Wednesday</option>
+                <option>Thursday</option>
+                <option>Friday</option>
+                <option>Saturday</option>
+                <option>Sunday</option>
+              </select>
+              <label>To</label>
+              <select name="day-selection">
+                <option>Monday</option>
+                <option>Tuesday</option>
+                <option>Wednesday</option>
+                <option>Thursday</option>
+                <option>Friday</option>
+                <option>Saturday</option>
+                <option>Sunday</option>
+              </select>
+            </div>
+            <div>
+              <label>Associated Supplier</label>
+              <input name="employee-supplier" />
+            </div>
+            <div>
+              <label>Associated Customer</label>
+              <input name="employee-customer" />
+            </div>
+            <button
+              class="primary-solid-blue full-width"
+              id="add-employee-button"
+            >
+              <i class="fas fa-plus px-half margin-reset"></i>Submit Employee
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

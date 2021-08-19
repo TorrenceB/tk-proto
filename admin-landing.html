@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RTS Administration</title>
+    <link href="./styles/styles.css" rel="stylesheet" />
+    <link href="./styles/menu.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/kendo/kendo.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/81f85f9ec5.js?v=20210802"
+      crossorigin="anonymous"
+    ></script>
+    <script src="http://kendo.cdn.telerik.com/2021.2.616/js/kendo.all.min.js"></script>
+    <script src="scripts/utility/utils.js" async></script>
+    <script src="./scripts/admin-landing.js" async></script>
+  </head>
+  <body>
+    <div class="menu"></div>
+    <main>
+      <div class="app-wrapper">
+        <!-- Search content -->
+        <div class="row">
+          <div class="column">
+            <header class="mt-1">
+              <div
+                class="set-row-dimensions-medium text-center text-left-medium"
+              >
+                <h1>Manage Timesheets</h1>
+                <h3>Week viewing for 7/18/21 - 7/24/2021</h3>
+              </div>
+              <hr class="full-width mb-2" />
+            </header>
+            <div class="set-row-dimensions-medium">
+              <div class="set-column-dimensions-medium mx-1-medium">
+                <!-- Search content -->
+                <h2 class="text-center mb-1 text-left-medium">
+                  Search Employee Information
+                </h2>
+                <div class="set-row-dimensions-large mb-2">
+                  <input
+                    class="search-input full-width text-left default-border"
+                    placeholder="&#xf002;"
+                    type="text"
+                  />
+                </div>
+              </div>
+              <div class="set-column-dimensions-medium">
+                <!-- Filter content -->
+                <div class="column text-center text-left-medium">
+                  <h2 class="my-1 hide-medium">Employee Timesheets</h2>
+                  <h4>Filter by status</h4>
+                  <form class="column set-row-dimensions-medium mb-1">
+                    <div
+                      class="
+                        radio-control-small
+                        radio-control-medium
+                        radio-control-large
+                        default-border
+                      "
+                    >
+                      <h5 for="pending" class="px-1">Pending</h5>
+                      <input
+                        type="radio"
+                        id="pending"
+                        class="radio-control"
+                        name="status"
+                      />
+                    </div>
+                    <div
+                      class="
+                        radio-control-small
+                        radio-control-medium
+                        radio-control-large
+                        default-border
+                      "
+                    >
+                      <h5 for="submitted" class="px-1">Submitted</h5>
+                      <input
+                        type="radio"
+                        id="submitted"
+                        class="radio-control"
+                        name="status"
+                      />
+                    </div>
+                    <div
+                      class="
+                        radio-control-small
+                        radio-control-medium
+                        radio-control-large
+                        default-border
+                      "
+                    >
+                      <h5 for="approved" class="px-1">Approved</h5>
+                      <input
+                        type="radio"
+                        id="approved"
+                        class="radio-control"
+                        name="status"
+                      />
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Contractor List -->
+        <div
+          class="full-width my-1 overflow-x-scroll"
+          id="user-list__container"
+        ></div>
+      </div>
+    </main>
+  </body>
+</html>
